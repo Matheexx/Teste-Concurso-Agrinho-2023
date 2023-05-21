@@ -7,48 +7,69 @@ body {
     width: 100%;
     background-color: #ffffff;
     font: normal 12pt Arial;
-}
-
-header, main, footer {
-    padding: 5px;
+    color: black;
 }
 
 header, footer {
     text-align: center;
-}
-
-header {
     background-color: #d7edff;
     padding: 15px;
 }
 
 h1 {
-    color: black;
     font-size: 30pt;
 }
 
 h2 {
-    font-size: 24pt;
+    font-size: 25pt;
 }
 
 h3 {
-    font-size: 18pt;
+    font-size: 20pt;
 }
 
-#Anchors-list {
+span {
+    color: rgb(224, 0, 0);
+}
+
+#anchors-list {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-#Anchors-list li a {
-    padding: 1px;
+#anchors-list li a {
     color: black;
+    text-decoration: none;
+}
+
+#anchors-list li a div {
+    padding: 5px;
     border-radius: 5px;
+    background-color: rgb(174, 214, 255);
 }
 
 main {
     background-color: #ffffff;
-    padding: 10px;
+}
+
+.titleSections {
+    background-color: rgb(174, 214, 255);
+}
+
+.titleSections h2 {
+    padding: 1%;
+    padding-left: 10%;
+}
+
+.contentSections {
+    padding: 1.5%;
+    padding-right: 20%;
+    padding-left: 6%;
+    text-align: justify;
+}
+
+.contentSections p {
+    font-size: 15pt;
 }
