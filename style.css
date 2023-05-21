@@ -5,7 +5,7 @@
 
 body {
     width: 100%;
-    background-color: white;
+    background-color: #ffffff;
     font: normal 12pt Arial;
 }
 
@@ -18,13 +18,21 @@ header, footer {
 }
 
 header {
-    background-color: rgb(192, 227, 255);
+    background-color: #d7edff;
     padding: 15px;
 }
 
 h1 {
     color: black;
+    font-size: 30pt;
+}
+
+h2 {
     font-size: 24pt;
+}
+
+h3 {
+    font-size: 18pt;
 }
 
 #Anchors-list {
@@ -41,6 +49,6 @@ h1 {
 }
 
 main {
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
 }
