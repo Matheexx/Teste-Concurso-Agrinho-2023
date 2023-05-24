@@ -5,15 +5,17 @@
 
 body {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #FBF0F0;
     font: normal 12pt Arial;
     color: black;
 }
 
 header, footer {
+    color: #FBF0F0;
     text-align: center;
-    background-color: #d7edff;
-    padding: 15px;
+    background-color: #B8B0B0;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 h1 {
@@ -29,47 +31,96 @@ h3 {
 }
 
 span {
-    color: rgb(224, 0, 0);
+    color: #ac0000;
 }
 
-#anchors-list {
+.anchors-list {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#firstNav {
     justify-content: space-around;
 }
 
-#anchors-list li a {
-    color: black;
+#secondNav {
+    justify-content: center;
+    gap: 7%;
+}
+
+.anchors-list li a {
+    color: #FBF0F0;
     text-decoration: none;
 }
 
-#anchors-list li a div {
+.anchors-list li a div {
     padding: 5px;
     border-radius: 5px;
-    background-color: rgb(174, 214, 255);
+    background-color: #7C7575;
 }
 
 main {
-    background-color: #ffffff;
+    background-color: #FBF0F0;
 }
 
 .titleSections {
-    background-color: rgb(174, 214, 255);
+    padding: 1%;
+    background-color: #7C7575;
 }
 
 .titleSections h2 {
-    padding: 1%;
-    padding-left: 10%;
+    margin-left: 10%;
+    color: #FBF0F0;
 }
 
 .contentSections {
-    padding: 1.5%;
-    padding-right: 20%;
-    padding-left: 6%;
+    margin: 1.5%;
+    margin-right: 25%;
+    margin-left: 7%;
     text-align: justify;
 }
 
 .contentSections p {
     font-size: 15pt;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 16pt;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#button-to-the-top {
+    color: #FBF0F0;
+    text-decoration: none;
+    margin: auto;
+    width: 18%;
+}
+
+#button-to-the-top div p {
+    font-size: 18pt;
+}
+
+#button-to-the-top div {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #7C7575;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%
 }
