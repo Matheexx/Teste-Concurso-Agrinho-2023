@@ -34,13 +34,13 @@ h3 {
     font-size: 20pt;
 }
 
-span {
+#title {
     color: #d91e1e;
     font-size: 35pt;
 }
 
 #titleHeader {
-    background-image: url(imgs/background-header-img_90percent.jpg);
+    background-image: url(imgs/background-header-img_used.jpg);
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -109,9 +109,8 @@ main {
 
 .contentSections {
     margin: 2%;
-    margin-right: 25%;
     margin-left: 7%;
-    text-align: justify;
+    width: 70%;
 }
 
 footer {
@@ -120,7 +119,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    height: 30vh;
 }
 
 footer nav {
@@ -128,34 +126,56 @@ footer nav {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    margin: 2%;
+    margin-bottom: 0.5%;
 }
 
 #button-to-the-top {
-    color: white;
     text-decoration: none;
+    font-size: 16.5pt;
+    padding: 5px;
+    border-radius: 15px;
     margin: auto;
+    background-color: #656565;
+    color: white;
+    transition: 0.5s;
+}
+
+#button-to-the-top:hover {
+    background-color: #a0a0a0;
+    color: black;
+    transition: 0.5s;
 }
 
 #button-to-the-top div {
-    font-size: 18pt;
-    padding: 4px;
-    border-radius: 15px;
-    background-color: #656565;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 10%
+    justify-content: space-around;
+    gap: 10px;
 }
 
 #secondNav {
-    justify-content: center;
-    gap: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #secondNav li a {
-    color: rgb(191, 191, 191);
+    color: #D2D2D2;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
     font-size: 15pt;
+    transition: 0.3s;
+}
+
+#secondNav li a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+#copyright {
+    margin: 2%;
+    margin-top: 0.5%;
 }
