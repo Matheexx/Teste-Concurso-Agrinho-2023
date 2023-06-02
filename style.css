@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;700&family=Righteous&family=Sarala:wght@400;700&family=Concert+One&display=swap');
 
 * {
     padding: 0;
@@ -22,21 +22,23 @@ header, footer {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 30pt;
+    font-size: 40px;
 }
 
 h2 {
     font-family: 'Righteous', cursive;
-    font-size: 25pt;
+    font-size: 35px;
 }
 
 h3 {
-    font-size: 20pt;
+    font-size: 30px;
 }
 
 #title {
-    color: #d91e1e;
-    font-size: 35pt;
+    color: #db0000;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Concert One', cursive;
 }
 
 #titleHeader {
@@ -87,6 +89,7 @@ h3 {
 }
 
 #firstNav li a:hover {
+    color: black;
     font-size: 12.5pt;
     text-decoration: underline;
     transition: 0.3s;
@@ -94,7 +97,7 @@ h3 {
 
 main {
     background-color: white;
-    font-size: 14pt;
+    font-size: 18px;
 }
 
 .titleSections {
@@ -133,7 +136,7 @@ footer nav {
 #button-to-the-top {
     text-decoration: none;
     font-size: 16.5pt;
-    padding: 5px;
+    padding: 8px;
     border-radius: 15px;
     margin: auto;
     background-color: #656565;
