@@ -11,6 +11,7 @@ body {
     font: normal 12pt Arial;
     font-family: 'Sarala', sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 header, footer {
