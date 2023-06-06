@@ -146,7 +146,7 @@ footer nav {
 
 #button-to-the-top {
     text-decoration: none;
-    font-size: 16.5pt;
+    font-size: 22px;
     padding: 8px;
     border-radius: 15px;
     margin: auto;
@@ -273,6 +273,8 @@ Responsividade:
     }
 
     #navPcHeader {
+        padding: 0;
+        margin: 0;
         height: 0;
         visibility: collapse;
     }
@@ -287,6 +289,10 @@ Responsividade:
         margin-bottom: 2%;
         width: 85%;
     }
+
+    .titleSections h2 {
+        margin-left: 8%;
+    }
     
     h2 {
         font-size: 50px;
@@ -294,6 +300,37 @@ Responsividade:
 
     h3 {
         font-size: 45px;
+    }
+
+    #button-to-the-top {
+        font-size: 16px;
+        padding: 5px;
+        background-color: #656565;
+        color: white;
+    }
+    
+    #button-to-the-top:hover {
+        background-color: #656565;
+        color: white;
+    }
+
+    #button-to-the-top div img {
+        width: 15%;
+    }
+
+    #secondNav li a {
+        color: #D2D2D2;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: underline;
+        font-size: 16px;
+    }
+
+    #secondNav li a:hover {
+        color: #D2D2D2;
+    }
+
+    #copyright {
+        font-size: 16px;
     }
 }
 
@@ -316,13 +353,6 @@ Responsividade:
     
     main {
         font-size: 18px;
-    }
-
-    .contentSections {
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 85%;
     }
     
     h2 {
@@ -354,13 +384,6 @@ Responsividade:
     main {
         font-size: 16px;
     }
-
-    .contentSections {
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 85%;
-    }
     
     h2 {
         font-size: 30px;
@@ -390,13 +413,6 @@ Responsividade:
 
     main {
         font-size: 14px;
-    }
-
-    .contentSections {
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 85%;
     }
     
     h2 {
