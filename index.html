@@ -5,14 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="js/index.js" defer></script>
     <title>Atentados escolares! Contexto da situação e guia necessário à população</title>
 </head>
 <body>
     <header>
+        <section id="navMobileHeader">
+            <div id="menu-acess">
+                <div id="menu-button" onclick="clickMenu()"><img src="imgs/menu_original.png" alt=""></div>
+            </div>
+            <div id="menu-content">
+                <h1><span id="title"><strong>Atentados escolares!</strong></span></h1>
+                <nav id="mobile-anchors-list">
+                    <label for="mobile-list">Menu:</label>
+                    <ul type="none" id="mobile-list">
+                        <li><a href="#introduction" rel="next"><div>Introdução</div></a></li>
+                        <li><a href="#context" rel="next"><div>Contexto</div></a></li>
+                        <li><a href="#cases" rel=""><div>Casos</div></a></li>
+                        <li><a href="#brazil-x-abroad" rel="next"><div>Brasil x Exterior</div></a></li>
+                        <li><a href="#understanding-the-attacks" rel="next"><div>Entendendo os atentados</div></a></li>
+                        <li><a href="#guide" rel="next"><div>Guia Definitivo</div></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
         <section id="titleHeader">
             <h1><span id="title"><strong>Atentados escolares!</strong></span> <br> Contexto da situação e guia necessário à população</h1>
         </section>
-        <section id="navHeader">
+        <section id="navPcHeader">
             <nav>
                 <ul type="none" class="anchors-list" id="firstNav">
                     <li><a href="#introduction" rel="next"><div>Introdução</div></a></li>
