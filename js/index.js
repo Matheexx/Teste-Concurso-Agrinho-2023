@@ -1,18 +1,28 @@
 "use strict";
+const navMobileHeader = window.document.getElementById('navMobileHeader');
 const menuContent = window.document.getElementById("menu-content");
-const titleHeader = window.document.getElementById("titleHeader");
-const navMobileHeader = window.document.getElementById("navMobileHeader");
 function clickMenu() {
-    if (!(menuContent.style.visibility === "visible")) {
+    if (menuContent.style.visibility !== "visible") {
         menuContent.style.visibility = "visible";
-        menuContent.style.height = "60vh";
-        titleHeader.style.visibility = "collapse";
-        titleHeader.style.height = "0";
+        navMobileHeader.style.height = "100%";
+        navMobileHeader.style.width = "70%";
     }
     else {
-        menuContent.style.visibility = "collapse";
-        menuContent.style.height = "0";
-        titleHeader.style.visibility = "visible";
-        titleHeader.style.height = "60vh";
+        leaveMenu();
+    }
+}
+function leaveMenu() {
+    menuContent.style.visibility = "collapse";
+    navMobileHeader.style.height = "0";
+}
+const menuButton = window.document.getElementById("menu-button");
+var ultimaPosicao = 0;
+function rollY() {
+    var atualPosicao = window.scrollY;
+    if (atualPosicao > ultimaPosicao) {
+        menuButton.style.backgroundColor = "black";
+    }
+    else {
+        menuButton.style.backgroundColor = "transparent";
     }
 }
