@@ -1,5 +1,6 @@
 "use strict";
 const navMobileHeader = window.document.getElementById('navMobileHeader');
+const menuAccess = window.document.getElementById("menu-access");
 const menuContent = window.document.getElementById("menu-content");
 function clickMenu() {
     if (menuContent.style.visibility !== "visible") {
@@ -14,15 +15,16 @@ function clickMenu() {
 function leaveMenu() {
     menuContent.style.visibility = "collapse";
     navMobileHeader.style.height = "0";
+    navMobileHeader.style.width = "100%";
 }
-const menuButton = window.document.getElementById("menu-button");
-var ultimaPosicao = 0;
-function rollY() {
-    var atualPosicao = window.scrollY;
-    if (atualPosicao > ultimaPosicao) {
-        menuButton.style.backgroundColor = "black";
+function scroll() {
+    if (window.scrollY > 0) {
+        menuAccess.style.backgroundColor = "#161616";
     }
     else {
-        menuButton.style.backgroundColor = "transparent";
+        menuAccess.style.backgroundColor = "transparent";
     }
+}
+function clickMenuLinks() {
+    leaveMenu();
 }

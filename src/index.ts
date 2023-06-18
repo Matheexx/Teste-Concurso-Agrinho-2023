@@ -1,5 +1,7 @@
 const navMobileHeader:HTMLDivElement = window.document.getElementById('navMobileHeader') as HTMLDivElement;
 
+const menuAccess:HTMLDivElement = window.document.getElementById("menu-access") as HTMLDivElement;
+
 const menuContent:HTMLDivElement = window.document.getElementById("menu-content") as HTMLDivElement;
 
 function clickMenu():void {
@@ -15,18 +17,17 @@ function clickMenu():void {
 function leaveMenu():void {
     menuContent.style.visibility = "collapse";
     navMobileHeader.style.height = "0";
+    navMobileHeader.style.width = "100%";
 }
 
-const menuButton:HTMLDivElement = window.document.getElementById("menu-button") as HTMLDivElement;
-
-var ultimaPosicao = 0;
-
-function rollY() {
-    var atualPosicao = window.scrollY;
-
-    if(atualPosicao > ultimaPosicao) {
-        menuButton.style.backgroundColor = "black";
+function scroll():void {
+    if (window.scrollY > 0) {
+            menuAccess.style.backgroundColor = "#161616";
     } else {
-        menuButton.style.backgroundColor = "transparent";
+        menuAccess.style.backgroundColor = "transparent";
     }
+}
+
+function clickMenuLinks() {
+    leaveMenu();
 }

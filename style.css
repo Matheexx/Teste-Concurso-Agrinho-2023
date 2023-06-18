@@ -11,7 +11,7 @@ body, html {
 
 @media (max-width: 786px) {
     body, html {
-        overflow-x: hidden!important;
+        overflow-x: hidden !important;
     }
 }
 
@@ -25,11 +25,6 @@ header, footer {
     width: 100%;
     color: white;
     background-color: black;
-}
-
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
 }
 
 #navMobileHeader, #menu-content {
@@ -54,6 +49,12 @@ h1 {
     font-size: 50px;
     font-weight: 700;
     font-family: Calibri, sans-serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: 5%;
 }
 
 #navPcHeader {
@@ -206,22 +207,19 @@ Configuração Responsiva/Mobile:
 @media only screen and (max-device-width: 850px) {
     #navMobileHeader {
         visibility: visible;
-        width: 70%;
+        width: 100%;
         background-color: black;
         position: fixed;
     }
 
     #menu-access {
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
     }
 
     #menu-button {
         width: fit-content;
         padding: 5px;
-        margin-left: 20%;
+        margin-left: 1%;
     }
 
     #menu-button img {
@@ -239,8 +237,9 @@ Configuração Responsiva/Mobile:
         flex-direction: column;
         justify-content: center;
         gap: 10px;
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin: 20%;
+        margin-left: 5%;
+        margin-right: 10%;
     }
 
     #menu-word {
@@ -299,6 +298,10 @@ Configuração Responsiva/Mobile:
         width: 85%;
     }
 
+    .titleSections {
+        padding: 1%;
+    }
+
     .titleSections h2 {
         margin-left: 8%;
     }
@@ -345,7 +348,7 @@ Configuração Responsiva/Mobile:
     }
     
     #titleHeader {
-        height: 60vh;
+        height: 55vh;
     }
     
     #title {
@@ -371,7 +374,7 @@ Configuração Responsiva/Mobile:
     }
     
     #titleHeader {
-        height: 60vh;
+        height: 55vh;
     }
     
     #title {
@@ -397,15 +400,15 @@ Configuração Responsiva/Mobile:
     }
     
     #titleHeader {
-        height: 60vh;
+        height: 55vh;
     }
     
     #title {
-        font-size: 30px;
+        font-size: 32px;
     }
     
     h1, h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     main {
@@ -419,6 +422,6 @@ Configuração Responsiva/Mobile:
 
 @media only screen and (max-device-height: 600px) {
     #titleHeader {
-        height: 100%;
+        height: 40vh;
     }
 }
