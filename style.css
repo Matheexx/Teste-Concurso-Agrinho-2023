@@ -208,12 +208,13 @@ Configuração Responsiva/Mobile:
     #navMobileHeader {
         visibility: visible;
         width: 100%;
-        background-color: black;
+        background-color: #121212;
         position: fixed;
     }
 
     #menu-access {
         width: 100%;
+        background-color: transparent;
     }
 
     #menu-button {
@@ -228,7 +229,7 @@ Configuração Responsiva/Mobile:
     }
 
     #menu-content {
-        background-color: #7d7d7d;
+        background-image: linear-gradient(to bottom, #161616, #262626);
         color: white;
     }
 
@@ -236,14 +237,15 @@ Configuração Responsiva/Mobile:
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
-        margin: 20%;
-        margin-left: 5%;
-        margin-right: 10%;
+        gap: 18px;
+        padding: 30%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     #menu-word {
-        font-size: 20px;
+        font-size: 24px;
+        margin-left: 2%;
     }
     
     #mobile-anchors-list {
@@ -420,8 +422,8 @@ Configuração Responsiva/Mobile:
     }
 }
 
-@media only screen and (max-device-height: 600px) {
+@media only screen and (max-device-height: 450px) {
     #titleHeader {
-        height: 40vh;
+        height: 80vh;
     }
 }
