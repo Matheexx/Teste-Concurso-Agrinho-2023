@@ -1,7 +1,5 @@
 const navMobileHeader:HTMLDivElement = window.document.getElementById('navMobileHeader') as HTMLDivElement;
 
-const menuAccess:HTMLDivElement = window.document.getElementById("menu-access") as HTMLDivElement;
-
 const menuContent:HTMLDivElement = window.document.getElementById("menu-content") as HTMLDivElement;
 
 function clickMenu():void {
@@ -22,14 +20,36 @@ function leaveMenu():void {
     menuContent.style.height = "0";
 }
 
+const menuAccess:HTMLDivElement = window.document.getElementById("menu-access") as HTMLDivElement;
+
+const btnToTheTop:HTMLAnchorElement = window.document.getElementById("button-to-the-top-mobile") as HTMLAnchorElement;
+
 function scroll():void {
-    if (window.scrollY > 0) {
-        menuAccess.style.backgroundColor = "#121212";
-    } else {
-        menuAccess.style.backgroundColor = "transparent";
+    if (isNavMobileHeaderVisible()) {
+        if (isInTheTop()) {
+            menuAccess.style.backgroundColor = "transparent";
+            btnToTheTop.style.visibility = "collapse";
+        } else {
+            menuAccess.style.backgroundColor = "#121212";
+            btnToTheTop.style.visibility = "visible";
+        }
     }
 }
 
-function clickMenuLinks() {
+btnToTheTop.addEventListener("click", () => {
     leaveMenu();
+    menuAccess.style.backgroundColor = "transparent";
+    btnToTheTop.style.visibility = "collapse";
+})
+
+function clickMenuLinks():void {
+    leaveMenu();
+}
+
+function isInTheTop() {
+    return (window.scrollY === 0);
+}
+
+function isNavMobileHeaderVisible() {
+    return (window.getComputedStyle(navMobileHeader).visibility === "visible");
 }

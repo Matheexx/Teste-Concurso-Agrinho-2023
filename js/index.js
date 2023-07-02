@@ -1,6 +1,5 @@
 "use strict";
 const navMobileHeader = window.document.getElementById('navMobileHeader');
-const menuAccess = window.document.getElementById("menu-access");
 const menuContent = window.document.getElementById("menu-content");
 function clickMenu() {
     if (menuContent.style.visibility !== "visible") {
@@ -19,14 +18,31 @@ function leaveMenu() {
     navMobileHeader.style.width = "100%";
     menuContent.style.height = "0";
 }
+const menuAccess = window.document.getElementById("menu-access");
+const btnToTheTop = window.document.getElementById("button-to-the-top-mobile");
 function scroll() {
-    if (window.scrollY > 0) {
-        menuAccess.style.backgroundColor = "#121212";
-    }
-    else {
-        menuAccess.style.backgroundColor = "transparent";
+    if (isNavMobileHeaderVisible()) {
+        if (isInTheTop()) {
+            menuAccess.style.backgroundColor = "transparent";
+            btnToTheTop.style.visibility = "collapse";
+        }
+        else {
+            menuAccess.style.backgroundColor = "#121212";
+            btnToTheTop.style.visibility = "visible";
+        }
     }
 }
+btnToTheTop.addEventListener("click", () => {
+    leaveMenu();
+    menuAccess.style.backgroundColor = "transparent";
+    btnToTheTop.style.visibility = "collapse";
+});
 function clickMenuLinks() {
     leaveMenu();
+}
+function isInTheTop() {
+    return (window.scrollY === 0);
+}
+function isNavMobileHeaderVisible() {
+    return (window.getComputedStyle(navMobileHeader).visibility === "visible");
 }
