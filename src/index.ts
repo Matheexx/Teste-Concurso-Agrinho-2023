@@ -22,24 +22,24 @@ function leaveMenu():void {
 
 const menuAccess:HTMLDivElement = window.document.getElementById("menu-access") as HTMLDivElement;
 
-const btnToTheTop:HTMLAnchorElement = window.document.getElementById("button-to-the-top-mobile") as HTMLAnchorElement;
+const btnToTheTopMobile:HTMLAnchorElement = window.document.getElementById("button-to-the-top-mobile") as HTMLAnchorElement;
 
 function scroll():void {
     if (isNavMobileHeaderVisible()) {
         if (isInTheTop()) {
             menuAccess.style.backgroundColor = "transparent";
-            btnToTheTop.style.visibility = "collapse";
+            btnToTheTopMobile.style.visibility = "collapse";
         } else {
             menuAccess.style.backgroundColor = "#121212";
-            btnToTheTop.style.visibility = "visible";
+            btnToTheTopMobile.style.visibility = "visible";
         }
     }
 }
 
-btnToTheTop.addEventListener("click", () => {
+btnToTheTopMobile.addEventListener("click", () => {
     leaveMenu();
     menuAccess.style.backgroundColor = "transparent";
-    btnToTheTop.style.visibility = "collapse";
+    btnToTheTopMobile.style.visibility = "collapse";
 })
 
 function clickMenuLinks():void {
