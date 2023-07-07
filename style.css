@@ -53,10 +53,10 @@ header, footer {
 }
 
 #titleHeader {
-    background-image: url(imgs/background-header-img_used.jpg);
+    background-image: url(imgs/background-header-new_desktop.jpeg);
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,16 +65,21 @@ header, footer {
 }
 
 #title {
-    color: #db0000;
+    color: #ff1616;
     font-size: 50px;
     font-weight: 700;
     font-family: Calibri, sans-serif;
+    text-shadow: #000 1px -1px 2px, #000 -1px 1px 2px, #000 1px 1px 2px, #000 -1px -1px 2px;
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
-    margin: 5%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-shadow: #000 -1px 1px;
 }
 
 #navPcHeader {
@@ -107,16 +112,15 @@ h1 {
 }
 
 #firstNav li a {
-    color: #3b3b3b;
+    color: #464646;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 #firstNav li a:hover {
     color: black;
-    text-decoration: underline;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 main {
@@ -141,13 +145,34 @@ h2 {
 }
 
 .contentSections {
-    margin: 2%;
-    margin-left: 6%;
+    margin: 1.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.contentSections .text {
+    margin-left: 5%;
     width: 75%;
 }
 
 h3 {
     font-size: 25px;
+}
+
+.contentSections .button-to-the-top {
+    visibility: visible;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.332);
+    border: 0;
+    border-radius: 10px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.contentSections .button-to-the-top:hover {
+    background-color: #3b3b3b;
+    transition: 0.1s;
 }
 
 footer {
@@ -168,25 +193,25 @@ footer nav {
     margin: 2%;
 }
 
-#button-to-the-top-pc {
+#button-to-the-top-desktop-footer {
     margin: auto;
     visibility: visible;
     transition: 0.1s;
     cursor: pointer;
 }
 
-#button-to-the-top-pc:hover {
+#button-to-the-top-desktop-footer:hover {
     background-color: #696969;
     color: black;
     border: 1px solid black;
     transition: 0.1s;
 }
 
-#button-to-the-top-pc p {
+#button-to-the-top-desktop-footer p {
     font-size: 22px;
 }
 
-#button-to-the-top-pc img {
+#button-to-the-top-desktop-footer img {
     width: 35px;
 }
 
@@ -270,11 +295,11 @@ Configuração Responsiva/Mobile:
     }
 
     #button-to-the-top-mobile p {
-        font-size: 16px;
+        font-size: 28px;
     }
 
     #button-to-the-top-mobile img {
-        width: 20px;
+        width: 32px;
     }
 
     #menu-content {
@@ -294,7 +319,7 @@ Configuração Responsiva/Mobile:
     }
 
     #menu-word {
-        font-size: 24px;
+        font-size: 36px;
         margin-left: 2%;
     }
     
@@ -317,11 +342,12 @@ Configuração Responsiva/Mobile:
         color: #eeeeee;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 28px;
     }
 
     #titleHeader {
         height: 60vh;
+        background-image: url(imgs/background-header-new_mobile.jpeg);
     }
     
     #title {
@@ -340,14 +366,17 @@ Configuração Responsiva/Mobile:
     }
 
     main {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .contentSections {
+        margin: 2%;
+        display: block;
+    }
+
+    .contentSections .text {
+        width: 90%;
         margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 85%;
     }
 
     .titleSections {
@@ -359,10 +388,16 @@ Configuração Responsiva/Mobile:
     }
 
     h3 {
-        font-size: 45px;
+        font-size: 30px;
     }
 
-    #button-to-the-top-pc {
+    .contentSections .button-to-the-top {
+        visibility: collapse;
+        width: 0;
+        height: 0;
+    }
+
+    #button-to-the-top-desktop-footer {
         visibility: collapse !important;
         width: 0;
         height: 0;
@@ -394,6 +429,22 @@ Configuração Responsiva/Mobile:
     #menu-button img {
         width: 45px;
     }
+
+    #button-to-the-top-mobile p {
+        font-size: 24px;
+    }
+
+    #button-to-the-top-mobile img {
+        width: 28px;
+    }
+
+    #menu-word {
+        font-size: 32px;
+    }
+
+    #mobile-anchors-list li a {
+        font-size: 23px;
+    }
     
     #titleHeader {
         height: 55vh;
@@ -420,9 +471,25 @@ Configuração Responsiva/Mobile:
     #menu-button img {
         width: 40px;
     }
+
+    #button-to-the-top-mobile p {
+        font-size: 20px;
+    }
+
+    #button-to-the-top-mobile img {
+        width: 24px;
+    }
+
+    #menu-word {
+        font-size: 28px;
+    }
+
+    #mobile-anchors-list li a {
+        font-size: 18px;
+    }
     
     #titleHeader {
-        height: 55vh;
+        height: 50vh;
     }
     
     #title {
@@ -446,17 +513,33 @@ Configuração Responsiva/Mobile:
     #menu-button img {
         width: 35px;
     }
+
+    #button-to-the-top-mobile p {
+        font-size: 16px;
+    }
+
+    #button-to-the-top-mobile img {
+        width: 20px;
+    }
+
+    #menu-word {
+        font-size: 24px;
+    }
+
+    #mobile-anchors-list li a {
+        font-size: 13px;
+    }
     
     #titleHeader {
-        height: 55vh;
+        height: 45vh;
     }
     
     #title {
-        font-size: 32px;
+        font-size: 35px;
     }
     
     h1, h2 {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     main {
